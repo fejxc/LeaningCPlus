@@ -1,0 +1,13 @@
+# ninja log v5
+12	497	6989236034769931	CMakeFiles/LearningCPlus.dir/main.cpp.obj	e70ddbbe22dfaf65
+369	501	6989247618581109	LearningCPlus.exe	aa457d9c544df675
+3	494	6989236034740296	CMakeFiles/LearningCPlus.dir/test/addFunction.cpp.obj	1a4412864bce1bbf
+3	824	6989246608683014	CMakeFiles/LearningCPlus.dir/test/AddMain.cpp.obj	8bee5a64d2cdae31
+4	369	6989247617282017	CMakeFiles/LearningCPlus.dir/testArray/SumSource.cpp.obj	6840745e310cbd71
+11	528	6989250231798909	CMakeFiles/LearningCPlus.dir/testArray/SumSource.cpp.obj	6840745e310cbd71
+3	572	6989250232560435	CMakeFiles/LearningCPlus.dir/testPoint/TestPoint.cpp.obj	fa7b24e4c8ae1220
+572	1198	6989250238907962	LearningCPlus.exe	22ddfba081d477e
+3	397	6989250317313548	CMakeFiles/LearningCPlus.dir/testPoint/TestPoint.cpp.obj	fa7b24e4c8ae1220
+398	559	6989250318900544	LearningCPlus.exe	22ddfba081d477e
+3	396	6989250730120626	CMakeFiles/LearningCPlus.dir/testPoint/TestPoint.cpp.obj	fa7b24e4c8ae1220
+396	562	6989250731763468	LearningCPlus.exe	22ddfba081d477e
