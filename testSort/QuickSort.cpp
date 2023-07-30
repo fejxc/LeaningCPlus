@@ -49,11 +49,11 @@ void quickSort(int a[], int l, int r) {
 
 
 
-
-int main(){
-    int a[6] = {12,12,12,45,78,6};
-    printArray(a,sizeof (a)/sizeof (a[0]));
-    //printf("\n");
-    quickSort(a,0, 5);
-    return 0;
-}
+//
+//int main(){
+//    int a[6] = {12,12,12,45,78,6};
+//    printArray(a,sizeof (a)/sizeof (a[0]));
+//    //printf("\n");
+//    quickSort(a,0, 5);
+//    return 0;
+//}
