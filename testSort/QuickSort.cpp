@@ -2,58 +2,53 @@
 // Created by 孙昀 on 2023/7/30.
 //
 #include <stdio.h>
-#include <stdlib.h>
-/**
- * 划分函数
- * @param a 原始数组
- * @param l 左指针
- * @param r 右指针
- * @return
- */
-int huafen(int a[], int l, int r) {
-    //选中枢元素
-    int mid = a[l];
-    while(l < r) {
-        while(a[r] >= mid && l < r) {
-            r--;
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int partition(int arr[], int low, int high) {
+    int pivot = arr[low];
+    while (low<high) {
+        while (arr[high] >= pivot && low < high){
+            high--;
         }
-        a[l] = a[r];
-        while (a[l] <= mid && l < r) {
-            l++;
+        arr[low] = arr[high];
+        while (arr[low] <= pivot && low < high){
+            low++;
         }
-        a[r] = a[l];
+        arr[high] = arr[low];
     }
-    a[l] = mid;
-    return l;
+    arr[low] = pivot;
+    return low;
 }
-int getArrayLength(int a[]) {
-    return  sizeof (a)/sizeof (int);
-}
-int printArray(int a[],int size) {
-    int i = 0;
-    for( i = 0; i < size; i++) {
-        printf("%2d2",a[i]);
+
+void quickSort2(int arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+
+        quickSort2(arr, low, pi - 1);
+        quickSort2(arr, pi + 1, high);
     }
 }
-void quickSort(int a[], int l, int r) {
-    //递归终止条件
-    if(l >= r)
-        return;
-    int m = huafen(a,l,r);
-    //左部分
-    quickSort(a,l,m-1);
-    //右部分
-    quickSort(a,m+1,r);
-    printArray(a,sizeof (a)/sizeof (a[0]));
+
+int main() {
+    int arr[] = {64, 34, 25, 12, 22, 11, 8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("原始数组：\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    quickSort2(arr, 0, n - 1);
+
+    printf("\n排序后的数组：\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
 }
-
-
-
-//
-//int main(){
-//    int a[6] = {12,12,12,45,78,6};
-//    printArray(a,sizeof (a)/sizeof (a[0]));
-//    //printf("\n");
-//    quickSort(a,0, 5);
-//    return 0;
-//}
