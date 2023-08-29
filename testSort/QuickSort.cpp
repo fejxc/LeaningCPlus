@@ -34,7 +34,7 @@ void quickSort2(int arr[], int low, int high) {
     }
 }
 
-int main() {
+int mainQuickSort() {
     int arr[] = {64, 34, 25, 12, 22, 11, 8};
     int n = sizeof(arr) / sizeof(arr[0]);
 

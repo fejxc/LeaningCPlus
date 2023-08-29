@@ -3,7 +3,7 @@
 //
 #include <iostream>
 using namespace std;
-int main() {
+int mainTestPoint() {
     int i = 100;
     int * p;
     p = &i;
