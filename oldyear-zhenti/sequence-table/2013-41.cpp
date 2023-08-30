@@ -10,7 +10,7 @@
  * @return
  */
 
-int func(int a[],int n){
+int func_2013_41(int a[],int n){
     quickSortArray(a,0,n-1);//快排
     int m = a[n/2];//可能的主元素
     int count = 0;//m值的计数器
@@ -34,8 +34,8 @@ int func(int a[],int n){
 int main_2013_41(){
     int a[8] = {0,5,5,3,5,7,5,5};//主元素是5
     int b[8] = {0,5,5,3,5,1,5,7};//没主元素
-    int resa = func(a,8);
-    int resb = func(b,8);
+    int resa = func_2013_41(a,8);
+    int resb = func_2013_41(b,8);
     printf("%d",resa);
     printf("\n");
     printf("%d",resb);
