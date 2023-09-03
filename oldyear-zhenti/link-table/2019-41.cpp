@@ -1,6 +1,8 @@
 //
 // Created by 孙昀 on 2023/9/3.
 //
+//链表按规则反转
+
 #include <stdio.h>
 typedef struct node {
     int data;
