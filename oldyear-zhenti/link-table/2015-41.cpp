@@ -28,7 +28,7 @@ NODE* deleteDuplicates(NODE* head, int n) {
     return head;
 }
 
-int main(int argc, const char * argv[]) {
+int main_2015_41(int argc, const char * argv[]) {
     NODE *head = (NODE *)malloc(sizeof(NODE));
     head->link = NULL; // 初始化链表的头节点
     NODE *curr = head;
