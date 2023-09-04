@@ -46,7 +46,7 @@ void expressionTree(BtTree* root) {
     dfs(root->right);  // 处理右子树
 }
 
-int main() {
+int main_2017_41() {
     // 构建示例表达式树
     TreeNode* root = createNode("*");
     root->left = createNode("+");
