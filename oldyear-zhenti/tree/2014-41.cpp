@@ -55,7 +55,7 @@ int pathSum(BiTree root) {
     return calculateWeightedPathLength(root, 0);
 }
 
-int main() {
+int main_2014_41() {
     // 构建示例二叉树
     TreeNode* root = createNode(1);
     root->left = createNode(3);
